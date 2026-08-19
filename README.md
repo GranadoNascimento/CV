@@ -1,7 +1,7 @@
-# 🗺️ 3D Geospatial Career Portfolio
+# 🗺️ 3D Interactive Career Portfolio
 ### Interactive Career Showcase | Adailton Granado
 
-This project is a high-fidelity 3D geospatial application built with the **ArcGIS Maps SDK for JavaScript**. It serves as an interactive curriculum vitae, visualizing a career in RPA & AI Development spanning Brazil and Spain.
+This project is a high-fidelity 3D interactive application built with the **ArcGIS Maps SDK for JavaScript**. It serves as an interactive curriculum vitae, visualizing a career in RPA & AI Development spanning Brazil and Spain.
 
 ## 🌐 Live Demo
 Experience the interactive globe here:  
@@ -35,7 +35,7 @@ Experience the interactive globe here:
 
 ## 📂 Project Structure
 ```text
-3d-geospatial-cv/
+adailton-granado-cv/
 ├─ index.html           # Main entry point and UI structure
 ├─ css/
 │  └─ style.css         # Custom responsive styles and ArcGIS overrides
