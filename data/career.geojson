@@ -1,0 +1,91 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.7038, 40.4168] },
+      "properties": {
+        "order": 1,
+        "company": "Indra",
+        "logo": "assets/logos/indra.jpg",
+        "career_phase": "TechLead",
+        "role": "Tech Lead / Arquiteto de Soluções",
+        "city": "Madrid",
+        "country": "Espanha",
+        "period": "Ago 2022 – Atual",
+        "description": "Responsável pela arquitetura de novas automações e testes automatizados, com levantamento de requisitos, documentação e alinhamento com clientes. Acompanha projetos e cronogramas, elabora o product backlog, organiza sprints e prioriza tarefas, incidentes e chamados.",
+        "stack": "Power Apps, Bot City, Automation Anywhere, Pega Systems, UiPath, Power Automate, Crawler, MAKE, N8N, Blue Prism, Robot Framework, Python, Selenium, Genexus"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-43.1769409, -22.9126497] },
+      "properties": {
+        "order": 2,
+        "company": "Stone",
+        "logo": "assets/logos/stone.jpeg",
+        "career_phase": "Senior",
+        "role": "Desenvolvedor Sênior",
+        "city": "Rio de Janeiro",
+        "country": "Brasil",
+        "period": "Set 2021 – Jul 2022",
+        "description": "Criação e estruturação do CoE; desenvolvimento de novas automações e sustentação de sistemas, além de testes automatizados.",
+        "stack": "UiPath, Power Apps, Power Automate Desktop, Bot City, Blue Prism, Python"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-46.6343972, -23.5465253] },
+      "properties": {
+        "order": 3,
+        "company": "B3",
+        "logo": "assets/logos/b3.png",
+        "career_phase": "Senior",
+        "role": "Desenvolvedor Sênior",
+        "city": "São Paulo",
+        "country": "Brasil",
+        "period": "Set 2019 – Ago 2021",
+        "description": "Criação e estruturação do CoE; desenvolvimento de novas automações e testes automatizados.",
+        "stack": "Automation Anywhere, UiPath, Power Automate, N8N, MAKE, Bot City, Robot Framework, Python, Selenium, Genexus"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [72.6367, 23.1885] },
+      "properties": {
+        "order": 4,
+        "company": "Tata Consultancy Services",
+        "logo": "assets/logos/tcs.png",
+        "career_phase": "Pleno",
+        "role": "Desenvolvedor Pleno",
+        "city": "Gandhinagar",
+        "country": "Índia",
+        "period": "Fev 2018 – Ago 2019",
+        "description": "Levantamento de requisitos e desenvolvimento de novas aplicações de RPA, além de testes automatizados.",
+        "stack": "UiPath, Blue Prism, Power Apps, Automation Anywhere"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-51.178297, -23.3017306] },
+      "properties": {
+        "order": 5,
+        "company": "FTI Tecnologia da Informação",
+        "logo": "assets/logos/fti.png",
+        "career_phase": "Junior",
+        "role": "Desenvolvedor Júnior",
+        "city": "Londrina",
+        "country": "Brasil",
+        "period": "Jan 2017 – Jan 2018",
+        "description": "Desenvolvimento de novas automações, levantamento de requisitos e construção de PDD e SDD.",
+        "stack": "Blue Prism, Automation Anywhere"
+      }
+    }
+
+  ]
+}

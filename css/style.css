@@ -1,0 +1,154 @@
+html, body {
+    height: 100%; margin: 0; padding: 0; 
+    background: #0e1117; color: #e5e7eb; 
+    font-family: system-ui, -apple-system, sans-serif; overflow: hidden; 
+}
+
+#header { 
+    height: 56px; display: flex; justify-content: space-between; align-items: center; 
+    padding: 0 16px; background: #020617; border-bottom: 1px solid #1f2933;
+    box-sizing: border-box; z-index: 100;
+}
+
+.header-links { display: flex; gap: 16px; }
+.header-link { color: #38bdf8; text-decoration: none; font-weight: 600; padding-top: 5px; }
+.header-link--cv { border: 1px solid #38bdf8; padding: 4px 12px; border-radius: 8px; }
+
+#app { 
+    height: calc(100vh - 56px); display: grid; 
+    grid-template-columns: 420px 1fr; overflow: hidden; position: relative;
+}
+
+#sidebar { 
+    background: #020617; border-right: 1px solid #1f2933; 
+    padding: 14px; overflow-y: auto; display: flex; flex-direction: column; 
+    box-sizing: border-box; z-index: 50;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#viewDiv { width: 100%; height: 100%; background: #020617; }
+
+/* --- SPLASH SCREEN: terminal / hacker style, recolored to match the site's blue accent --- */
+#splash {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #060a12; background-image: radial-gradient(circle at 50% 0%, rgba(56,189,248,0.08), transparent 60%);
+    z-index: 2000; display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.8s ease;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+.splash-content {
+    max-width: 600px; width: 85%; padding: 48px 40px; background: #0f172a;
+    border: 1px solid #1e3a5f; border-radius: 12px; text-align: center;
+    box-shadow: 0 0 60px rgba(56, 189, 248, 0.15);
+}
+
+.avatar-ring { display: inline-block; border-radius: 50%; margin-bottom: 28px; }
+.profile-img {
+    width: 110px; height: 110px; border-radius: 50%; object-fit: cover;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 16px rgba(56,189,248,0.7), 0 0 34px rgba(56,189,248,0.35);
+}
+
+/* ASCII-art name banner. Key detail borrowed from the reference site: plain generic
+   "monospace" (not a webfont) at a small size with tight line-height keeps box-drawing
+   characters pixel-aligned — webfonts often hint these glyphs inconsistently, which is
+   what caused the overlapping/broken look in an earlier attempt. */
+.ascii-name {
+    display: inline-block; margin: 0 0 20px; text-align: left;
+    font-family: monospace; white-space: pre;
+    font-size: clamp(6px, 1.5vw, 12px); line-height: 1.15;
+    color: #38bdf8;
+    max-width: 100%; overflow-x: auto;
+    animation: ascii-flicker 4s infinite;
+}
+@keyframes ascii-flicker {
+    0%, 94%, 100% { opacity: 1; color: #38bdf8; }
+    95% { opacity: 0.6; color: #ff2e6c; }
+    97% { opacity: 0.85; color: #a855f7; }
+}
+
+.whoami-line { color: #6b7280; font-size: 13px; margin: 0 0 6px; }
+.full-name { color: #e5e7eb; font-size: 30px; font-weight: 700; margin: 0 0 18px; }
+.role-line { color: #38bdf8; font-size: 16px; margin: 0 0 32px; }
+.cursor-blink {
+    display: inline-block; width: 9px; height: 17px; background: #38bdf8;
+    margin-left: 4px; vertical-align: -3px; animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.scroll-hint { color: #6b7280; font-size: 12px; margin: 0 0 4px; }
+.bounce-arrow { color: #38bdf8; font-size: 20px; margin-bottom: 22px; animation: bounce 1.6s ease-in-out infinite; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+
+.explore-btn {
+    padding: 13px 26px; background: transparent; color: #38bdf8;
+    border: 1px solid #38bdf8; border-radius: 6px; font-family: inherit;
+    font-weight: 700; cursor: pointer; transition: 0.2s;
+}
+.explore-btn:hover { background: rgba(56,189,248,0.12); box-shadow: 0 0 18px rgba(56,189,248,0.35); }
+
+/* PANELS */
+.panel { border: 1px solid #1f2933; border-radius: 14px; padding: 12px; margin-bottom: 12px; background: rgba(30, 41, 59, 0.3); }
+.btnrow { margin-bottom: 8px; }
+button { padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #020617; color: #e5e7eb; cursor: pointer; font-weight: 600; width: 100%; }
+button:hover { border-color: #38bdf8; color: #38bdf8; }
+button.active-tour { background: #ef4444 !important; color: white !important; }
+select { width: 100%; padding: 8px; border-radius: 10px; background: #020617; color: #e5e7eb; border: 1px solid #334155; margin-top: 5px; outline: none; }
+label { font-size: 11px; color: #94a3b8; display: block; margin: 10px 0 4px; text-transform: uppercase; }
+
+/* CARDS */
+.card { border: 1px solid #1f2933; border-radius: 12px; padding: 12px; cursor: pointer; margin-bottom: 8px; background: #020617; transition: 0.2s; }
+.card-header { display: flex; align-items: center; gap: 8px; }
+.card b { color: #38bdf8; font-size: 14px; }
+.card.active { border-color: #38bdf8; background: rgba(56, 189, 248, 0.1); }
+.card-techlead b { color: #f97316; }
+
+/* COMPANY LOGO / INITIALS FALLBACK */
+.company-logo, .company-initials { width: 26px; height: 26px; border-radius: 6px; flex-shrink: 0; }
+.company-logo { object-fit: contain; background: #fff; border: 1px solid #334155; }
+.company-initials { display: flex; align-items: center; justify-content: center; background: #0f172a; border: 1px solid #334155; color: #38bdf8; font-size: 10px; font-weight: 700; }
+
+/* POPUPS & CHIPS */
+.popup-timeline { display: flex; flex-direction: column; gap: 8px; max-width: 280px; }
+.role-company-wrap { display: flex; align-items: center; gap: 8px; }
+.role-company { font-weight: 800; color: #38bdf8; font-size: 15px; }
+.role-description { font-size: 12px; color: #cbd5e1; text-align: left; line-height: 1.4; }
+.chip-wrap { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { font-size: 9px; padding: 2px 6px; border-radius: 4px; background: #0f172a; border: 1px solid #334155; color: #38bdf8; }
+
+/* Custom sunny icon (SVG) replacing the default Esri icon font glyph */
+.esri-icon-sunny::before {
+    content: "" !important;
+}
+
+.esri-icon-sunny, 
+.esri-daylight__time-slider-button .esri-icon-sunny,
+.esri-expand__icon--expanded .esri-icon-sunny { 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFD700'%3E%3Cpath d='M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1z'/%3E%3C/svg%3E") !important; 
+    background-size: 20px !important; 
+    background-repeat: no-repeat !important; 
+    background-position: center !important;
+    width: 24px !important;
+    height: 24px !important;
+    display: inline-block !important;
+}
+
+/* Ensure the icon is centered inside the Expand widget button */
+.esri-expand__icon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobileToggle { display: none; }
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    #app { grid-template-columns: 1fr; }
+    #sidebar { position: absolute; bottom: 0; left: 0; width: 100%; height: 38%; border-right: none; border-top: 2px solid #38bdf8; background: rgba(2, 6, 23, 0.95); backdrop-filter: blur(10px); }
+    #sidebar.minimized { height: 45px !important; overflow: hidden; }
+    #mobileToggle { display: block !important; margin-bottom: 10px; background: #38bdf8; color: #020617; }
+    .esri-ui-bottom-right { bottom: 40% !important; }
+    .esri-popup--docked-bottom-right .esri-popup__main-container { max-height: 25vh !important; margin-bottom: 40vh !important; }
+}
+
