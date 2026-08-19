@@ -63,8 +63,8 @@ html, body {
 }
 @keyframes ascii-flicker {
     0%, 94%, 100% { opacity: 1; color: #38bdf8; }
-    95% { opacity: 0.6; color: #ff2e6c; }
-    97% { opacity: 0.85; color: #a855f7; }
+    95% { opacity: 0.6; color: #ffffff; }
+    97% { opacity: 0.85; color: #ffffff; }
 }
 
 .whoami-line { color: #6b7280; font-size: 13px; margin: 0 0 6px; }
