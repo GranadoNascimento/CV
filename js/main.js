@@ -211,6 +211,11 @@ require([
   };
 
   view.when(() => {
+    // Nudges the camera to itself to force a repaint; without this, SceneView sometimes
+    // stays a blank canvas until the user manually scrolls/zooms (which changes the camera
+    // and triggers a redraw), since it's constructed with a fixed camera.
+    view.camera = view.camera.clone();
+
     view.ui.add(new Expand({ view, content: new BasemapGallery({ view }), expandIconClass: "esri-icon-basemap", group: "top-right" }), "top-right");
     view.ui.add(new Expand({
       view,
