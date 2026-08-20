@@ -1,6 +1,6 @@
 let view, visibleFeatures = [], index = -1, tourInterval = null, isFlying = false, animationHandle = null, features = [], layer;
 
-const DEFAULT_CAMERA = { position: { longitude: -51.0373544, latitude: -23.0600434, z: 20000 }, tilt: 45, heading: 0 };
+const DEFAULT_CAMERA = { position: { longitude: -10, latitude: 20, z: 18000000 }, tilt: 0, heading: 0 };
 const TOUR_INTERVAL_MS = 8000;
 const FLY_DURATION_MS = 3500;
 const FLY_TILT = 65;
