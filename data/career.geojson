@@ -4,9 +4,26 @@
 
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-43.1813, -22.9105] },
+      "geometry": { "type": "Point", "coordinates": [-47.8836, -15.8040] },
       "properties": {
         "order": 1,
+        "company": "Polícia Federal",
+        "logo": "assets/logos/policiafederal.jpg",
+        "career_phase": "TechLead",
+        "role": "Tech Lead",
+        "city": "Brasília",
+        "country": "Brasil",
+        "period": "Jun 2024 – Atual",
+        "description": "Responsável por gerenciar o time técnico em projetos confidenciais.",
+        "stack": "Liderança técnica, Gestão de equipe, Arquitetura de soluções"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-43.1813, -22.9105] },
+      "properties": {
+        "order": 2,
         "company": "Petrobras",
         "logo": "assets/logos/petrobras-logo-png_seeklogo-108022%20(1).png",
         "career_phase": "Senior",
@@ -23,7 +40,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-3.7038, 40.4168] },
       "properties": {
-        "order": 2,
+        "order": 3,
         "company": "Indra",
         "logo": "assets/logos/indra.jpg",
         "career_phase": "TechLead",
@@ -40,7 +57,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-43.1769409, -22.9126497] },
       "properties": {
-        "order": 3,
+        "order": 4,
         "company": "Stone",
         "logo": "assets/logos/stone.jpeg",
         "career_phase": "Senior",
@@ -57,7 +74,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-46.6343972, -23.5465253] },
       "properties": {
-        "order": 4,
+        "order": 5,
         "company": "B3",
         "logo": "assets/logos/b3.png",
         "career_phase": "Senior",
@@ -74,7 +91,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [72.6367, 23.1885] },
       "properties": {
-        "order": 5,
+        "order": 6,
         "company": "IBM",
         "logo": "assets/logos/ibm.jpeg",
         "career_phase": "Pleno",
@@ -91,7 +108,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-51.178297, -23.3017306] },
       "properties": {
-        "order": 6,
+        "order": 7,
         "company": "FTI Tecnologia da Informação",
         "logo": "assets/logos/fti.png",
         "career_phase": "Junior",
