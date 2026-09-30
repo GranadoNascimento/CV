@@ -89,15 +89,15 @@
 
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [72.6367, 23.1885] },
+      "geometry": { "type": "Point", "coordinates": [-46.6480, -23.5790] },
       "properties": {
         "order": 6,
         "company": "IBM",
         "logo": "assets/logos/ibm.jpeg",
         "career_phase": "Pleno",
         "role": "Desenvolvedor Pleno",
-        "city": "Gandhinagar",
-        "country": "Índia",
+        "city": "São Paulo",
+        "country": "Brasil",
         "period": "Fev 2018 – Ago 2019",
         "description": "Levantamento de requisitos e desenvolvimento de novas aplicações de RPA, além de testes automatizados.",
         "stack": "UiPath, Blue Prism, Power Apps, Automation Anywhere"
