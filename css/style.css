@@ -101,7 +101,6 @@ label { font-size: 11px; color: #94a3b8; display: block; margin: 10px 0 4px; tex
 .card-header { display: flex; align-items: center; gap: 8px; }
 .card b { color: #38bdf8; font-size: 14px; }
 .card.active { border-color: #38bdf8; background: rgba(56, 189, 248, 0.1); }
-.card-techlead b { color: #f97316; }
 
 /* COMPANY LOGO / INITIALS FALLBACK */
 .company-logo, .company-initials { width: 26px; height: 26px; border-radius: 6px; flex-shrink: 0; }
