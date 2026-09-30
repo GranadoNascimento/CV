@@ -4,9 +4,26 @@
 
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-3.7038, 40.4168] },
+      "geometry": { "type": "Point", "coordinates": [-43.1813, -22.9105] },
       "properties": {
         "order": 1,
+        "company": "Petrobras",
+        "logo": "assets/logos/petrobras-logo-png_seeklogo-108022%20(1).png",
+        "career_phase": "Senior",
+        "role": "Engenheiro de IA",
+        "city": "Rio de Janeiro",
+        "country": "Brasil",
+        "period": "Jan 2023 – Atual",
+        "description": "Desenvolvimento de melhorias contínuas nas áreas de tecnologia com IA generativa: agentes com Copilot, soluções de RAG com LLMs, fluxos inteligentes com N8N e MAKE e automações com self-healing.",
+        "stack": "Copilot, LLMs, RAG, N8N, MAKE, Self-Healing"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.7038, 40.4168] },
+      "properties": {
+        "order": 2,
         "company": "Indra",
         "logo": "assets/logos/indra.jpg",
         "career_phase": "TechLead",
@@ -23,7 +40,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-43.1769409, -22.9126497] },
       "properties": {
-        "order": 2,
+        "order": 3,
         "company": "Stone",
         "logo": "assets/logos/stone.jpeg",
         "career_phase": "Senior",
@@ -40,7 +57,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-46.6343972, -23.5465253] },
       "properties": {
-        "order": 3,
+        "order": 4,
         "company": "B3",
         "logo": "assets/logos/b3.png",
         "career_phase": "Senior",
@@ -57,7 +74,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [72.6367, 23.1885] },
       "properties": {
-        "order": 4,
+        "order": 5,
         "company": "IBM",
         "logo": "assets/logos/ibm.jpeg",
         "career_phase": "Pleno",
@@ -74,7 +91,7 @@
       "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-51.178297, -23.3017306] },
       "properties": {
-        "order": 5,
+        "order": 6,
         "company": "FTI Tecnologia da Informação",
         "logo": "assets/logos/fti.png",
         "career_phase": "Junior",
